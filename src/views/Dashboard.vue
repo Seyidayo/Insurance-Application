@@ -1,13 +1,20 @@
 <template>
   <section>
-    <h1>Dashboard Page</h1>
+    <Header />
   </section>
 </template>
 <script>
-import Navbar from '@/components/Navbar.vue'
+import Header from "@/components/Header.vue";
+import { mapGetters, mapActions } from "vuex";
 export default {
-	components: {
-		Navbar
-	}
-}
+  created() {
+    this.$store.dispatch("SET_APPLICATIONS");
+  },
+  computed: {
+    ...mapGetters(["TOKEN"])
+  },
+  components: {
+    Header
+  }
+};
 </script>

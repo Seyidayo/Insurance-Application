@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <b-navbar toggleable="sm" type="light" variant="light">
+    <b-navbar toggleable="sm" class="bg-white">
       <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
       <b-container>
@@ -35,6 +35,15 @@
       </b-container>
     </b-navbar>
   </nav>
-  <!-- <router-link to="/">Home</router-link>|
-  <router-link to="/stat">About</router-link>-->
 </template>
+<style lang="scss">
+nav {
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+</style>
