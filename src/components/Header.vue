@@ -2,15 +2,22 @@
   <header class="my-6">
     <h5 class="text-xl font-semibold">Welcome Lois!</h5>
     <p class="text-md text-gray-400">Monday, july 22 2019</p>
-    <b-list-group horizontal="md">
-      <b-list-group-item>Cras justo odio</b-list-group-item>
-      <b-list-group-item>Dapibus ac facilisis in</b-list-group-item>
-      <b-list-group-item>Morbi leo risus</b-list-group-item>
-    </b-list-group>
+    <b-row>
+      <b-col v-for="(fact, value, index) in STATISTICS" v-bind:key="index">
+        <statistics-card :stat="fact" :description="value" :id="index" />
+      </b-col>
+    </b-row>
   </header>
 </template>
 <script>
+import { mapGetters } from "vuex";
+import StatisticsCard from "./StatisticsCard.vue";
 export default {
-  props: {}
+  computed: {
+    ...mapGetters(["STATISTICS"])
+  },
+  components: {
+    StatisticsCard
+  }
 };
 </script>

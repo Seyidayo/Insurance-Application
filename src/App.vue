@@ -22,4 +22,9 @@ export default {
 //   text-align: center;
 //   color: #2c3e50;
 // }
+button {
+  width: 156px;
+  height: 35px;
+  font-size: 14px !important;
+}
 </style>
