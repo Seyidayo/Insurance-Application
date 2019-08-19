@@ -8,15 +8,15 @@
   </b-card>
 </template>
 <script>
-import AmountOfClaimsIcon from "../assets/image/amount-of-claims-icon.png";
-import InsuranceBoughtIcon from "../assets/image/insurance-bought-icon.png";
-import InsuranceClaimIcon from "../assets/image/insurance-claim-icon.png";
-import TotalAmountOfInsuranceIcon from "../assets/image/total-amount-icon.png";
+import AmountOfClaimsIcon from "@/assets/image/amount-of-claims-icon.png";
+import InsuranceBoughtIcon from "@/assets/image/insurance-bought-icon.png";
+import InsuranceClaimIcon from "@/assets/image/insurance-claim-icon.png";
+import TotalAmountOfInsuranceIcon from "@/assets/image/total-amount-icon.png";
 
-import AmountOfClaimsBg from "../assets/image/amount-of-claims-bg.png";
-import InsuranceBoughtBg from "../assets/image/insurance-bought-bg.png";
-import InsuranceClaimBg from "../assets/image/insurance-claim-bg.png";
-import TotalAmountOfInsuranceBg from "../assets/image/total-amount-bg.png";
+import AmountOfClaimsBg from "@/assets/image/amount-of-claims-bg.png";
+import InsuranceBoughtBg from "@/assets/image/insurance-bought-bg.png";
+import InsuranceClaimBg from "@/assets/image/insurance-claim-bg.png";
+import TotalAmountOfInsuranceBg from "@/assets/image/total-amount-bg.png";
 
 export default {
   name: "StatisticsCard",

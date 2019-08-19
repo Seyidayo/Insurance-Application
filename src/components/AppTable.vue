@@ -30,6 +30,7 @@
 import { mapGetters } from "vuex";
 import EmptyPlaceholder from "@/components/EmptyPlaceholder";
 export default {
+  name: "ApplicationsTable",
   computed: {
     ...mapGetters(["APPLICATIONS"])
   },
