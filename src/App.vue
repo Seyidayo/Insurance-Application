@@ -1,9 +1,7 @@
 <template>
-  <main id="app" class="bg-gray-200">
+  <main id="app" class="bg-gray-100">
     <Navbar />
-    <b-container class="py-6">
-      <router-view />
-    </b-container>
+    <router-view />
   </main>
 </template>
 <script>
@@ -14,17 +12,3 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-// #app {
-//   font-family: "Avenir", Helvetica, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-align: center;
-//   color: #2c3e50;
-// }
-button {
-  width: 156px;
-  height: 35px;
-  font-size: 14px !important;
-}
-</style>

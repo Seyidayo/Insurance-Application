@@ -7,7 +7,7 @@ const actions = {
       const { applications } = await fetchData(applicationApi, token);
       commit("SET_APPLICATIONS", applications);
     } catch (error) {
-      console.log(error);
+      console.error(error);
     } finally {
       commit("SET_FETCHING_APPLICATIONS", false);
     }
@@ -17,12 +17,11 @@ const actions = {
     try {
       commit("SET_FETCHING_STATISTICS", true);
       const { statistics } = await fetchData(statisticsApi, token);
-      console.log({ statistics });
       commit("SET_STATISTICS", statistics);
     } catch (error) {
-      console.log(error);
+      console.error(error);
     } finally {
-      commit("SET_FETCHING_STATISTICS", true);
+      commit("SET_FETCHING_STATISTICS", false);
     }
   }
 };

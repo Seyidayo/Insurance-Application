@@ -1,13 +1,14 @@
 <template>
   <nav>
     <b-navbar toggleable="sm" class="bg-white">
-      <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
-
       <b-container>
         <b-navbar-brand>
-          <router-link to="/">Logo</router-link>
+          <router-link to="/">
+            <img :src="CompanyLogo" alt />
+          </router-link>
         </b-navbar-brand>
 
+        <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
         <b-collapse id="nav-text-collapse" is-nav>
           <b-navbar-nav>
             <b-nav-item>
@@ -25,7 +26,7 @@
             <b-nav-item-dropdown right>
               <!-- Using 'button-content' slot -->
               <template slot="button-content">
-                <em>User</em>
+                <span class="badge success-badge">LD</span> Lois Dorello
               </template>
               <b-dropdown-item href="#">Profile</b-dropdown-item>
               <b-dropdown-item href="#">Sign Out</b-dropdown-item>
@@ -36,14 +37,13 @@
     </b-navbar>
   </nav>
 </template>
-<style lang="scss">
-nav {
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import CompanyLogo from "@/assets/image/Logo.png";
+export default {
+  data() {
+    return {
+      CompanyLogo
+    };
   }
-}
-</style>
+};
+</script>

@@ -32,13 +32,27 @@ export const prepareApplications = application => {
     const status = app.complete;
     const action = app.complete;
     const insuranceType = app.insuranceType;
-    Data.push({ SN, insuranceType, amount, date, status, action });
+    const blank = " ";
+    Data.push({ SN, insuranceType, amount, date, status, action, blank });
   });
   return Data;
 };
 
 export const prepareStats = statistics => {
-  // Object.keys(statistics).map(key => console.log(key));
+  let insuranceBought = statistics.totalInsurancesBought,
+    insuranceClaims = statistics.totalInsuranceClaims;
 
-  return Object.entries(statistics);
+  const totalInsurancesBought =
+    insuranceBought < 10 ? "0" + insuranceBought : insuranceBought;
+  const totalInsuranceClaims =
+    insuranceClaims < 10 ? "0" + insuranceClaims : insuranceClaims;
+  const totalInsuranceAmount = getAmount(statistics.totalInsuranceAmount);
+  const totalClaimsAmount = getAmount(statistics.totalClaimsAmount);
+  const Data = [
+    totalInsurancesBought,
+    totalInsuranceAmount,
+    totalInsuranceClaims,
+    totalClaimsAmount
+  ];
+  return Data;
 };

@@ -11,16 +11,21 @@ export default new Router({
     {
       path: "/",
       name: "Dashboard",
-      component: Dashboard
+      component: Dashboard,
+      meta: {
+        title: "Welcome | Insurance Dashboard",
+        content: "The Dashboard page showing your insurance statistics"
+      }
     },
     {
       path: "/settings",
       name: "Settings",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Settings.vue")
+        import(/* webpackChunkName: "about" */ "./views/Settings.vue"),
+      meta: {
+        title: "IA | Account Settings",
+        content: "Edit your personal and contact information"
+      }
     }
   ]
 });
