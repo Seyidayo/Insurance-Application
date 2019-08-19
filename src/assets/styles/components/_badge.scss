@@ -1,0 +1,12 @@
+.badge {
+  font-weight: 600;
+}
+
+.success-badge {
+  background-color: $green-bg-color;
+  color: $green-text-color;
+}
+.fail-badge {
+  background-color: $red-bg-color;
+  color: $red-text-color;
+}

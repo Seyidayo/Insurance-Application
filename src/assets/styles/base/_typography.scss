@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Soleil";
+  src: url("~@/assets/fonts/Soleil_Light.ttf");
+}
+
+@font-face {
+  font-family: "Avenir Bold";
+  src: url("~@/assets/fonts/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Avenir Regular";
+  src: url("~@/assets/fonts/AvenirNextLTPro-Regular.otf");
+}
+
+body {
+  font-family: "Avenir Regular", sans-serif;
+}
+
+h5 {
+  color: $header-text-color;
+}
+
+th {
+  color: $gray-text-color;
+  font-weight: 400;
+}
+
+td {
+  font-weight: 600;
+}
+
+nav {
+  a {
+    color: $gray-text-color;
+    font-weight: bold;
+    &.router-link-exact-active {
+      color: $header-text-color;
+    }
+    &:hover {
+      color: $header-hover-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.faded-gray {
+  color: $gray-text-color;
+}
+
+#table {
+  h5 {
+    color: $primary-text-color;
+    font-family: "Avenir Bold", sans-serif;
+  }
+}
+
+#settings {
+  font-family: "Soleil", sans-serif;
+  legend,
+  h5,
+  legend,
+  label {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  label,
+  legend {
+    font-size: 15px;
+    color: $primary-text-color;
+    letter-spacing: 1.21333px;
+    line-height: 15px;
+  }
+
+  a {
+    color: $primary-text-color;
+  }
+}
+
+.stat-card {
+  h3 {
+    color: $primary-text-color;
+    font-family: "Avenir Bold", sans-serif;
+  }
+}

@@ -1,0 +1,29 @@
+.btn {
+  background: $orange-bg-color;
+  width: 156px;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  &:hover {
+    background: $white-bg-color;
+    color: $orange-bg-color;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+}
+
+#settings .btn {
+  height: 45px;
+}
+
+#dropdown-offset button.btn {
+  color: $primary-text-color;
+  background: none;
+  text-decoration: underline;
+  &:hover,
+  &:focus {
+    background: none;
+    box-shadow: none;
+  }
+}
