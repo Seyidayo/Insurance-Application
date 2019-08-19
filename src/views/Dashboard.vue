@@ -3,13 +3,13 @@
     <Loader v-if="STATISTICS_IS_FETCHING" />
     <Header v-else />
     <Loader v-if="APPLICATIONS_IS_FETCHING" />
-    <AppTable v-else />
+    <ApplicationsTable v-else />
   </section>
 </template>
 <script>
 import { mapGetters } from "vuex";
 import Header from "@/components/Header.vue";
-import AppTable from "@/components/AppTable.vue";
+import ApplicationsTable from "@/components/AppTable.vue";
 import Loader from "@/components/Loader.vue";
 export default {
   created() {
@@ -18,7 +18,7 @@ export default {
   },
   components: {
     Header,
-    AppTable,
+    ApplicationsTable,
     Loader
   },
   computed: {

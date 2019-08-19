@@ -40,6 +40,7 @@
 <script>
 import CompanyLogo from "@/assets/image/Logo.png";
 export default {
+  name: "Navbar",
   data() {
     return {
       CompanyLogo

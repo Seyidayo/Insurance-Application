@@ -46,7 +46,7 @@
               <b-input type="password" id="current-password" value="secretpin"></b-input>
             </b-col>
             <b-col sm>
-              <label for="new-password">User Name</label>
+              <label for="new-password">New Password</label>
               <b-input type="password" id="new-password"></b-input>
             </b-col>
             <b-col sm>
@@ -103,9 +103,9 @@
   </section>
 </template>
 <script>
-import getAvatar from "../assets/image/avatar.png";
-import legendIcon from "../assets/image/svg-ting.png";
-import backgroundImage from "../assets/image/shapes-background-2.png";
+import getAvatar from "@/assets/image/avatar.png";
+import legendIcon from "@/assets/image/svg-ting.png";
+import backgroundImage from "@/assets/image/shapes-background-2.png";
 export default {
   data() {
     return {

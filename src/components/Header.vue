@@ -2,8 +2,8 @@
   <header class="my-6">
     <h5 class="font-semibold">Welcome Lois!</h5>
     <p class="text-md faded-gray">Monday, July 22 2019</p>
-    <b-row v-if="STATISTICS != undefined">
-      <b-col v-for="(fact, index) in STATISTICS" v-bind:key="index">
+    <b-row v-if="STATISTICS != undefined || STATISTICS.length > 0">
+      <b-col md="3" v-for="(fact, index) in STATISTICS" v-bind:key="index">
         <statistics-card :stat="fact" :id="index" />
       </b-col>
     </b-row>
@@ -17,6 +17,7 @@ import { mapGetters } from "vuex";
 import StatisticsCard from "@/components/StatisticsCard.vue";
 import EmptyPlaceholder from "@/components/EmptyPlaceholder";
 export default {
+  name: "Header",
   computed: {
     ...mapGetters(["STATISTICS"])
   },
