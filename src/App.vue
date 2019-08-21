@@ -1,5 +1,5 @@
 <template>
-  <main id="app" class="bg-gray-100">
+  <main id="app" class="main-background">
     <Navbar />
     <router-view />
   </main>

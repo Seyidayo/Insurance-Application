@@ -14,16 +14,22 @@
 }
 
 #settings .btn {
-  height: 45px;
+  width: 220px;
+  height: 56px;
 }
 
 #dropdown-offset button.btn {
   color: $primary-text-color;
   background: none;
   text-decoration: underline;
+  width: 76px;
   &:hover,
   &:focus {
     background: none;
     box-shadow: none;
+  }
+
+  .caret {
+    display: none;
   }
 }
