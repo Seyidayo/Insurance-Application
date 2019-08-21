@@ -1,6 +1,17 @@
-.stat-card {
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
-  max-height: 300px;
+.main-background {
+  background-color: $gray-bg-color;
+}
+
+#settings input {
+  background: rgba(235, 218, 206, 0.2);
+  border: 1px solid #ebdace;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &:disabled {
+    background: #e7e7e7;
+    border: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
 }

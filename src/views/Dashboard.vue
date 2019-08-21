@@ -1,9 +1,11 @@
 <template>
-  <section class="py-6 container">
-    <Loader v-if="STATISTICS_IS_FETCHING" />
-    <Header v-else />
-    <Loader v-if="APPLICATIONS_IS_FETCHING" />
-    <ApplicationsTable v-else />
+  <section class="py-6">
+    <b-container>
+      <Loader v-if="STATISTICS_IS_FETCHING" />
+      <Header v-else />
+      <Loader v-if="APPLICATIONS_IS_FETCHING" />
+      <ApplicationsTable v-else />
+    </b-container>
   </section>
 </template>
 <script>

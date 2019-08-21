@@ -1,6 +1,6 @@
 <template>
-  <b-card class="shadow-md stat-card" :style="{ backgroundImage: `url(${getBgImage(id)})`}">
-    <img :src="getImage(id)" alt />
+  <b-card class="shadow-sm stat-card" :style="{ backgroundImage: `url(${getBgImage(id)})`}">
+    <img :src="getImage(id)" alt height="64" width="64" />
     <div>
       <h3>{{stat}}</h3>
       <p>{{getDescription(id)}}</p>

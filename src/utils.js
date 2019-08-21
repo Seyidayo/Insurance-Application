@@ -8,7 +8,6 @@ export const fetchData = async (url, token) =>
 
 const getDay = givenDate => {
   let date = new Date(givenDate).toLocaleDateString("en-NG", {
-    weekday: "long",
     year: "numeric",
     month: "long",
     day: "numeric"
@@ -17,10 +16,12 @@ const getDay = givenDate => {
 };
 
 const getAmount = givenAmount => {
-  return givenAmount.toLocaleString("en-NG", {
-    style: "currency",
-    currency: "NGN"
-  });
+  return givenAmount
+    .toLocaleString("en-NG", {
+      style: "currency",
+      currency: "NGN"
+    })
+    .slice(0, -3);
 };
 
 export const prepareApplications = application => {
@@ -32,8 +33,7 @@ export const prepareApplications = application => {
     const status = app.complete;
     const action = app.complete;
     const insuranceType = app.insuranceType;
-    const blank = " ";
-    Data.push({ SN, insuranceType, amount, date, status, action, blank });
+    Data.push({ SN, insuranceType, amount, date, status, action });
   });
   return Data;
 };
