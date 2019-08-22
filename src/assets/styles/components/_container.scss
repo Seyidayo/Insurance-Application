@@ -29,7 +29,10 @@
 
 #settings .container {
   max-width: 81%;
-
+  .card-body {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
   @media (max-width: 768px) {
     max-width: 89%;
   }

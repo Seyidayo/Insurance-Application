@@ -9,7 +9,7 @@
               <img :src="legendIcon" class="mr-2" alt /> Personal Information
             </legend>
             <p
-              class="font-semibold"
+              class="font-semibold tracking-wider"
             >Use this page to update your contact Information and change your password</p>
             <div class="flex py-3 items-center">
               <img class="h-16 w-16 md:h-24 md:w-24 mr-4" :src="getAvatar" alt="Your Profile Image" />
@@ -72,7 +72,9 @@
               <img :src="legendIcon" class="mr-2" alt />
               Change your state of Residence
             </legend>
-            <p class="font-semibold">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p
+              class="font-semibold tracking-widest"
+            >Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             <b-row>
               <b-col md="4">
                 <label for="current-state">Current State</label>
