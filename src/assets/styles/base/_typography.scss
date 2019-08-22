@@ -21,15 +21,6 @@ h5 {
   color: $header-text-color;
 }
 
-th {
-  color: $gray-text-color;
-  font-weight: 400;
-}
-
-td {
-  font-weight: 600;
-}
-
 nav {
   a {
     color: $gray-text-color;
@@ -62,26 +53,39 @@ nav {
     letter-spacing: 0.1px;
   }
 
+  td,
+  th {
+    padding: 15px 30px;
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  th {
+    color: $gray-text-color;
+    font-weight: 400;
+  }
+
   td {
-    padding-right: 10px;
-    margin: 10px;
+    font-weight: 600;
+    .btn {
+      font-weight: 300;
+    }
   }
 }
 
 #settings {
   font-family: 'Soleil', sans-serif;
   legend,
-  h5,
-  legend,
-  label {
+  label,
+  h5 {
     text-transform: uppercase;
-    font-weight: bold;
   }
   font-size: 13px;
 
   label,
   legend {
     color: $primary-text-color;
+    font-weight: bold;
     letter-spacing: 1.21333px;
     line-height: 15px;
   }
