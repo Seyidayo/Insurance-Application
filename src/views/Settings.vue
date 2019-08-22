@@ -1,10 +1,8 @@
 <template>
-  <section id="settings" :style="{ backgroundImage: `url(${backgroundImage})`}">
+  <section id="settings" :style="{ backgroundImage: `url(${backgroundImage})`}" class="pb-20">
     <b-container>
-      <h5 class="font-black pt-5">
-        <b>Account Settings</b>
-      </h5>
-      <b-card class="my-5">
+      <h5 class="pt-5 font-black">Account Settings</h5>
+      <b-card class="my-8">
         <fieldset>
           <b-form>
             <legend class="flex items-center">
@@ -23,33 +21,28 @@
                 >Upload a new profile picture</a>
                 <p
                   id="file-upload"
-                  class="faded-gray"
+                  class="faded-gray mt-2"
                 >Maximum size allowed is 600kb of PNG, JPEG,JPG.</p>
               </div>
             </div>
             <b-row>
               <b-col md="4">
                 <label for="email-address">Email Address</label>
-                <b-input
-                  type="email"
-                  id="email-address"
-                  placeholder="amarachukwu@gmail.com"
-                  disabled
-                ></b-input>
+                <b-input type="email" id="email-address" value="amarachukwu@gmail.com" disabled></b-input>
               </b-col>
             </b-row>
             <b-row class="my-4">
               <b-col sm>
                 <label for="first-name">Full Name</label>
-                <b-input type="email" id="first-name" placeholder="Olatunji Joseph"></b-input>
+                <b-input type="email" id="first-name" value="Olatunji Joseph"></b-input>
               </b-col>
               <b-col sm>
                 <label for="user-name">User Name</label>
-                <b-input type="email" id="user-name" placeholder="Madjozi"></b-input>
+                <b-input type="email" id="user-name" value="Madjozi"></b-input>
               </b-col>
               <b-col sm>
                 <label for="birth-date">Birth Date</label>
-                <b-input type="email" id="birth-date" placeholder="07/15/1990" disabled></b-input>
+                <b-input type="email" id="birth-date" value="07/15/1990" disabled></b-input>
               </b-col>
             </b-row>
             <b-button class="p-2">Save Changes</b-button>
@@ -83,28 +76,28 @@
             <b-row>
               <b-col md="4">
                 <label for="current-state">Current State</label>
-                <b-input type="text" id="current-state" placeholder="Niger" disabled></b-input>
+                <b-input type="text" id="current-state" value="Niger" disabled></b-input>
               </b-col>
             </b-row>
 
             <b-row class="my-4">
-              <b-col md="4">
+              <b-col md="4" class="mb-3">
                 <label for="State-of-origin">New State of Residence</label>
                 <b-input type="text" id="State-of-origin"></b-input>
               </b-col>
-              <b-col md="4">
+              <b-col md="4" class="mb-3">
                 <label for="LGA">What LGA do you live in?</label>
                 <b-input type="text" id="LGA"></b-input>
               </b-col>
-              <b-col md="4">
+              <b-col md="4" class="mb-3">
                 <label for="federal-constituency">Federal Constituencies</label>
                 <b-input type="text" id="federal-constituency"></b-input>
               </b-col>
-              <b-col md="4">
+              <b-col md="4" class="mb-3">
                 <label for="senatorial-district">Senatorial District</label>
                 <b-input type="text" id="senatorial-district"></b-input>
               </b-col>
-              <b-col md="4">
+              <b-col md="4" class="mb-3">
                 <label for="state-constituency">State Constituencies</label>
                 <b-input type="text" id="state-constituency"></b-input>
               </b-col>

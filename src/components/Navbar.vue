@@ -42,7 +42,7 @@
 </template>
 <script>
 import CompanyLogo from "@/assets/image/Logo.png";
-import Avatar from "@/assets/image/Avatar.png";
+import Avatar from "@/assets/image/avatar-badge.png";
 export default {
   name: "Navbar",
   data() {
@@ -53,3 +53,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+</style>
