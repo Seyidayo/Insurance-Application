@@ -1,4 +1,4 @@
-import { prepareApplications, prepareStats } from "../utils";
+import { prepareApplications, prepareStats } from "@/utils";
 const getters = {
   APPLICATIONS: state => prepareApplications(state.applications.list),
   STATISTICS: state => prepareStats(state.statistics.list),
