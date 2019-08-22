@@ -16,7 +16,7 @@ import Loader from "@/components/Loader.vue";
 export default {
   created() {
     this.$store.dispatch("SET_STATISTICS");
-    this.$store.dispatch("SET_APPLICATIONS");
+    // this.$store.dispatch("SET_APPLICATIONS");
   },
   components: {
     Header,
