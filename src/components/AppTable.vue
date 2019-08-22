@@ -1,7 +1,7 @@
 <template>
   <section>
     <b-card class="mt-2 mb-20 shadow-md table-card" id="table">
-      <h6 class="p-3">Insurance Applications</h6>
+      <h6 class="py-3 px-8">Insurance Applications</h6>
       <b-table striped responsive hover v-if="APPLICATIONS.length > 0" :items="APPLICATIONS">
         <template slot="status" slot-scope="data">
           <span v-if="data.value" class="badge success-badge p-2">&bull; Completed</span>

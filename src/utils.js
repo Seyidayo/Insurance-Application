@@ -9,7 +9,7 @@ export const fetchData = async (url, token) =>
 const getDay = givenDate => {
   let date = new Date(givenDate).toLocaleDateString("en-NG", {
     year: "numeric",
-    month: "long",
+    month: "short",
     day: "numeric"
   });
   return date;
@@ -39,6 +39,7 @@ export const prepareApplications = application => {
 };
 
 export const prepareStats = statistics => {
+  console.log(typeof statistics);
   let insuranceBought = statistics.totalInsurancesBought,
     insuranceClaims = statistics.totalInsuranceClaims;
 

@@ -1,7 +1,9 @@
 <template>
   <section class="text-center">
-    <h3>NO RESULTS</h3>
-    <b-btn class="refresh-button" v-on:click="refresh()">↻</b-btn>
+    <h5 class="text-primary">
+      <b>Unable to Fetch Results</b>
+    </h5>
+    <b-btn class="refresh-button my-4" v-on:click="refresh()">↻</b-btn>
   </section>
 </template>
 

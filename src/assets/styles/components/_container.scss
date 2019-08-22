@@ -15,7 +15,7 @@
   background-position-x: right;
   background-position-y: bottom;
   border: none;
-  height: 180px;
+  height: 200px;
   max-height: 300px;
   box-shadow: none !important;
   .card-body {
@@ -23,8 +23,16 @@
   }
 }
 
+.container {
+  max-width: 88%;
+}
+
 #settings .container {
-  max-width: 80%;
+  max-width: 81%;
+
+  @media (max-width: 768px) {
+    max-width: 89%;
+  }
 }
 
 html {
