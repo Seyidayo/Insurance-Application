@@ -14,11 +14,18 @@
             <div class="flex py-3 items-center">
               <img class="h-16 w-16 md:h-24 md:w-24 mr-4" :src="getAvatar" alt="Your Profile Image" />
               <div class="text-left flex-col justify-center pt-2">
-                <a
+                <!-- <a
                   href="#"
                   aria-describedby="file-upload"
                   class="font-semibold underline leading-loose"
-                >Upload a new profile picture</a>
+                >
+                  Upload a new profile picture
+                  <input type="file" @change="handleFileChange" />
+                </a>-->
+                <label class="file-select underline leading-loose">
+                  Upload a new profile picture
+                  <input type="file" @change="handleFileChange" />
+                </label>
                 <p
                   id="file-upload"
                   class="faded-gray mt-2"
@@ -46,6 +53,7 @@
               </b-col>
             </b-row>
             <b-button class="p-2">Save Changes</b-button>
+            <hr class="line-down mt-4" />
             <b-row class="my-4">
               <b-col sm>
                 <label for="current-password">Current Password</label>
@@ -60,12 +68,12 @@
                 <b-input type="password" id="confirm-password"></b-input>
               </b-col>
             </b-row>
-            <b-button class="p-2">Save Changes</b-button>
+            <b-button>Save Changes</b-button>
           </b-form>
         </fieldset>
       </b-card>
 
-      <b-card class="my-4">
+      <!-- <b-card class="my-4">
         <fieldset>
           <b-form>
             <legend class="flex items-center">
@@ -104,10 +112,10 @@
                 <b-input type="text" id="state-constituency"></b-input>
               </b-col>
             </b-row>
-            <b-button class="p-2">Save Changes</b-button>
+            <b-button>Save Changes</b-button>
           </b-form>
         </fieldset>
-      </b-card>
+      </b-card>-->
     </b-container>
   </section>
 </template>
@@ -132,5 +140,15 @@ export default {
   border: 1px solid #e5e5e5;
   border-radius: 0;
   // background: red;
+}
+.file-select {
+  text-transform: capitalize !important;
+  color: black;
+  background-color: none;
+}
+
+/* Don't forget to hide the original file input! */
+.file-select > input[type="file"] {
+  display: none;
 }
 </style>

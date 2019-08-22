@@ -1,10 +1,7 @@
 <template>
-  <b-card
-    class="shadow-sm stat-card py-3 px-2"
-    :style="{ backgroundImage: `url(${getBgImage(id)})`}"
-  >
+  <b-card class="shadow-sm stat-card" :style="{ backgroundImage: `url(${getBgImage(id)})`}">
     <img :src="getImage(id)" alt height="64" width="64" />
-    <div>
+    <div class="my-4">
       <h3 class="font-bold">{{stat}}</h3>
       <p>{{getDescription(id)}}</p>
     </div>

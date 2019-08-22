@@ -23,11 +23,12 @@
           </b-navbar-nav>
 
           <b-navbar-nav class="ml-auto">
-            <b-nav-item-dropdown right>
+            <b-nav-item-dropdown right no-caret>
               <!-- Using 'button-content' slot -->
               <template slot="button-content">
                 <img class="inline-block mr-2" :src="Avatar" alt width="40" height="40" />
-                <span class="text-primary">Lois Durello</span>
+                <span class="text-primary demi-font">Lois Durello</span>
+                <img class="inline-block ml-1" :src="DropdownImage" width="10" height="5" />
               </template>
               <b-dropdown-item>
                 <router-link to="/settings">Account Settings</router-link>
@@ -41,6 +42,7 @@
   </nav>
 </template>
 <script>
+import DropdownImage from "@/assets/image/dropdown.png";
 import CompanyLogo from "@/assets/image/Logo.png";
 import Avatar from "@/assets/image/avatar-badge.png";
 export default {
@@ -48,7 +50,8 @@ export default {
   data() {
     return {
       CompanyLogo,
-      Avatar
+      Avatar,
+      DropdownImage
     };
   }
 };

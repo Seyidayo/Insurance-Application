@@ -1,10 +1,11 @@
 .btn {
   background: $orange-bg-color;
-  width: 156px;
+  width: 136px;
   height: 35px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   border: none;
+  border-radius: 2px;
   &:hover {
     background: $white-bg-color;
     color: $orange-bg-color;

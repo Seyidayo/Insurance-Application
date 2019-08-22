@@ -1,6 +1,6 @@
 <template>
   <header class="my-3">
-    <h4 class="font-bold leading-none">Welcome, Lois!</h4>
+    <h4 class="demi-font leading-none">Welcome, Lois!</h4>
     <p class="text-sm faded-gray font-semibold leading-none">{{todaysDate}}</p>
 
     <b-row v-if="STATISTICS !== undefined">

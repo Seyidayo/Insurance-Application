@@ -29,7 +29,8 @@ export const prepareApplications = application => {
   application.map((app, index) => {
     const SN = parseInt(index) + 1;
     const date = getDay(app.createdDate);
-    const amount = getAmount(app.amount);
+    // const amount = getAmount(app.amount);
+    const amount = getAmount(21400000);
     const status = app.complete;
     const action = app.complete;
     const insuranceType = app.insuranceType;
@@ -43,12 +44,18 @@ export const prepareStats = statistics => {
   let insuranceBought = statistics.totalInsurancesBought,
     insuranceClaims = statistics.totalInsuranceClaims;
 
-  const totalInsurancesBought =
-    insuranceBought < 10 ? "0" + insuranceBought : insuranceBought;
-  const totalInsuranceClaims =
-    insuranceClaims < 10 ? "0" + insuranceClaims : insuranceClaims;
-  const totalInsuranceAmount = getAmount(statistics.totalInsuranceAmount);
-  const totalClaimsAmount = getAmount(statistics.totalClaimsAmount);
+  // const totalInsurancesBought =
+  //   insuranceBought < 10 ? "0" + insuranceBought : insuranceBought;
+  // const totalInsuranceClaims =
+  //   insuranceClaims < 10 ? "0" + insuranceClaims : insuranceClaims;
+  // const totalInsuranceAmount = getAmount(statistics.totalInsuranceAmount);
+  // const totalClaimsAmount = getAmount(statistics.totalClaimsAmount);
+
+  const totalInsurancesBought = "06";
+  const totalInsuranceClaims = "03";
+  const totalInsuranceAmount = getAmount(21400000);
+  const totalClaimsAmount = getAmount(1400000);
+
   const Data = [
     totalInsurancesBought,
     totalInsuranceAmount,

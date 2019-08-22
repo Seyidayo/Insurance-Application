@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Avenir Demi';
+  src: url('~@/assets/fonts/AvenirNextLTPro-Demi.otf');
+}
+
+@font-face {
   font-family: 'Avenir Regular';
   src: url('~@/assets/fonts/AvenirNextLTPro-Regular.otf');
 }
@@ -26,8 +31,11 @@ nav {
     color: $gray-text-color;
     font-weight: bold;
     font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
     &.router-link-exact-active {
       color: $header-text-color;
+      font-family: 'Avenir Demi';
     }
     &:hover {
       color: $header-hover-color;
@@ -48,16 +56,25 @@ nav {
   font-size: 14px;
   h6 {
     color: $primary-text-color;
-    font-family: 'Avenir Regular', sans-serif;
+    font-family: 'Avenir Demi', sans-serif;
     font-weight: 800;
     letter-spacing: 0.1px;
   }
 
   td,
   th {
-    padding: 15px 30px;
     font-size: 14px;
     line-height: 15px;
+    vertical-align: middle;
+  }
+
+  tr td:last-child {
+    width: 300px;
+  }
+
+  tr td:first-child,
+  tr th:first-child {
+    padding-left: 24px;
   }
 
   th {
@@ -66,9 +83,10 @@ nav {
   }
 
   td {
-    font-weight: 600;
+    font-family: 'Avenir Demi';
     .btn {
       font-weight: 300;
+      font-family: 'Avenir Regular';
     }
   }
 }
@@ -111,8 +129,19 @@ nav {
   h3 {
     color: $primary-text-color;
     font-family: 'Avenir Bold', sans-serif;
+    font-size: 32px;
+    letter-spacing: -0.8px;
   }
   p {
     font-size: 15px;
+    letter-spacing: 0.2px;
   }
+}
+
+.demi-font {
+  font-family: 'Avenir Demi';
+}
+
+.bold-font {
+  font-family: 'Avenir Bold';
 }
