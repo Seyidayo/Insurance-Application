@@ -1,5 +1,5 @@
 <template>
-  <section class="py-6">
+  <section class="py-6 my-5">
     <b-container>
       <Loader v-if="STATISTICS_IS_FETCHING" />
       <Header v-else />

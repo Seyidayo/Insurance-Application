@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <b-navbar toggleable="sm" class="bg-white shadow-sm">
+    <b-navbar toggleable="sm" class="bg-white shadow-sm" fixed="top">
       <b-container>
         <b-navbar-brand>
           <router-link to="/">

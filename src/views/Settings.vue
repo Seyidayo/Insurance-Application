@@ -24,7 +24,7 @@
                 </a>-->
                 <label class="file-select underline leading-loose">
                   Upload a new profile picture
-                  <input type="file" @change="handleFileChange" />
+                  <input type="file" />
                 </label>
                 <p
                   id="file-upload"
@@ -41,15 +41,15 @@
             <b-row class="my-4">
               <b-col sm>
                 <label for="first-name">Full Name</label>
-                <b-input type="email" id="first-name" value="Olatunji Joseph"></b-input>
+                <b-input type="text" id="first-name" value="Olatunji Joseph"></b-input>
               </b-col>
               <b-col sm>
                 <label for="user-name">User Name</label>
-                <b-input type="email" id="user-name" value="Madjozi"></b-input>
+                <b-input type="text" id="user-name" value="Madjozi"></b-input>
               </b-col>
               <b-col sm>
                 <label for="birth-date">Birth Date</label>
-                <b-input type="email" id="birth-date" value="07/15/1990" disabled></b-input>
+                <b-input type="text" id="birth-date" value="07/15/1990" disabled></b-input>
               </b-col>
             </b-row>
             <b-button class="p-2">Save Changes</b-button>
@@ -73,7 +73,7 @@
         </fieldset>
       </b-card>
 
-      <!-- <b-card class="my-4">
+      <b-card class="my-4">
         <fieldset>
           <b-form>
             <legend class="flex items-center">
@@ -115,7 +115,7 @@
             <b-button>Save Changes</b-button>
           </b-form>
         </fieldset>
-      </b-card>-->
+      </b-card>
     </b-container>
   </section>
 </template>

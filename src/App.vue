@@ -1,7 +1,7 @@
 <template>
   <main id="app" class="main-background">
     <Navbar />
-    <router-view />
+    <router-view class="main-content" />
   </main>
 </template>
 <script>
