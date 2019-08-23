@@ -73,7 +73,7 @@
         </fieldset>
       </b-card>
 
-      <!-- <b-card class="my-4">
+      <b-card class="my-4">
         <fieldset>
           <b-form>
             <legend class="flex items-center">
@@ -115,7 +115,7 @@
             <b-button>Save Changes</b-button>
           </b-form>
         </fieldset>
-      </b-card>-->
+      </b-card>
     </b-container>
   </section>
 </template>
